@@ -1,6 +1,7 @@
 /* NAVBAR*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+
 *{
     margin: 0;
     padding: 0;
@@ -98,6 +99,7 @@ nav ul ul li a{
     display: none;
 }
 
+
 @media all and (max-width: 968px) {
     nav ul{
         float: left;
@@ -144,23 +146,25 @@ nav ul ul li a{
         color: aquamarine;
     }
 
+    .hide{
+        display: none;
+    }
+    
     .icon {
         display: block;
         color: white;
         position: absolute;
+        padding: 10px;
         right: 40px;
         line-height: 70px;
         font-size: 25px;
         cursor: pointer;
+        width: 50px;
+        height: 50px;
     }
-
+   
     nav ul li a:hover{
         box-shadow: none;
-
-    }
-
-    .show + a, ul{
-        display: none;
     }
 
     [id^=btn]:checked + ul {
@@ -168,3 +172,47 @@ nav ul ul li a{
 
     }
 }
+
+/* INDEX SIDA */
+
+.index_page{
+    background: url(../img/outdoor-team-orienteering-activity_53876-41026.avif);
+    background-size: cover;
+    height: 100vh;
+}
+
+
+
+/* OM OSS SIDA */
+
+.omoss_page{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 15% 1fr 1fr;
+    grid-template-areas: 
+    'nav nav'
+    'hst historiabild'
+    'goalbild goal ' ;
+}
+
+.historia{
+    grid-area: hst;
+    background-color: aquamarine;
+}
+
+.historiabild{
+    grid-area: historiabild;
+    background-color: aqua;
+}
+
+.goal{
+    grid-area: goal;
+    background-color: aquamarine;
+}
+
+.goalbild{
+    grid-area: goalbild;
+    background-color: aquamarine;
+}
+
