@@ -5,23 +5,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home - Page</title>
     <link rel="stylesheet" href="./css/stylesheet.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" >
 </head>
 
-<body>
+<body id="index_body">
     <nav> 
         <div class="logo"> TEAMBUILDNING </div>
         <label for="btn" class="icon">
-            <span class="fa fa-bars"></span>
+            <i class='bx bx-menu'></i>
         </label>
         <input type="checkbox" id="btn">
-        <ul>
+        <ul id="hej" class="hide">
             <li> <a href="index.html"> Home</a></li>
             <li>
-                <label for="btn-1" class="show"> Aktiviteter+</label>
+                <label for="btn-1" class="show"> Aktiviteter</label>
                 <input type="checkbox" id="btn-1">
-                <a href="aktivitet.html"> Aktiviteter</a>
                 <ul>
                     <li> <a href=""> ESCAPEROOM</a></li>
                     <li> <a href=""> FEM-KAMP</a></li>
@@ -36,7 +36,23 @@
             </li>
         </ul>
     </nav>
+    <div class="index_page">
+    <div class="center">
+        <h1> TITEL 1</h1>
+        <h2> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Blanditiis reiciendis iste laboriosam. Cumque esse sed architecto 
+            iste tempore velit dolor, repudiandae saepe earum, assumenda 
+            perspiciatis ab tenetur ullam voluptates corporis.</h2>
+            <div>
+                <a href="personer.html" class="knapp"> Personal </a>
+            </div> 
+        </div>
+    </div>
 
+
+
+<script src="js/java.js"></script>
 </body>
+
 
 </html>
