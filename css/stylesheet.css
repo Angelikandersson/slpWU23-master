@@ -63,7 +63,7 @@ nav ul li a:hover{
 }
 
 nav ul ul li a:hover{
-    color: aquamarine;
+    color: orange;
     box-shadow: none;
 }
 
@@ -100,14 +100,14 @@ nav ul ul li a{
 }
 
 
-@media all and (max-width: 968px) {
+@media only screen and (max-width: 768px) {
     nav ul{
         float: left;
         margin-right: 0;
     }
     nav.logo{
-        padding-left: 30px;
         width: 100%;
+
     }
 
     nav ul li, nav ul ul li{
@@ -130,14 +130,14 @@ nav ul ul li a{
     }
 
     nav ul ul a{
-        padding-left: 40px;
+        padding-left: 30px;
     }
 
     .show{
         display: block;
         color: white;
         font-size: 18px;
-        padding: 0 20px;
+        padding-left: 0px;
         line-height: 70px;
         cursor: pointer;
     }
@@ -154,15 +154,20 @@ nav ul ul li a{
         display: block;
         color: white;
         position: absolute;
-        padding: 10px;
+        padding: 10px, 10px, 10px, 10px;
         right: 40px;
         line-height: 70px;
         font-size: 25px;
         cursor: pointer;
         width: 50px;
         height: 50px;
+        float: right;
     }
-   
+    
+
+    .hej{
+        display: none;
+    }
     nav ul li a:hover{
         box-shadow: none;
     }
@@ -171,14 +176,41 @@ nav ul ul li a{
         display: block;
 
     }
+
+    /* AKTIVITETER telefon*/
+    .cards{
+        justify-content: center;
+        height: 100px;
+    }
 }
 
 /* INDEX SIDA */
 
 .index_page{
-    background: url(../img/outdoor-team-orienteering-activity_53876-41026.avif);
+    /*background: url(../img/hall.avif);
     background-size: cover;
+    height: 91.3vh;*/
     height: 100vh;
+    background: linear-gradient(90deg,aquamarine,#ff8a00);
+    height: 100vh;
+}
+
+@keyframes sliderShape{
+    0%,100%{
+    border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
+      transform: translate3d(0,0,0) rotateZ(0.01deg);
+    }
+    34%{
+        border-radius: 70% 30% 46% 54% / 30% 29% 71% 70%;
+      transform:  translate3d(0,5px,0) rotateZ(0.01deg);
+    }
+    50%{
+      transform: translate3d(0,0,0) rotateZ(0.01deg);
+    }
+    67%{
+      border-radius: 100% 60% 60% 100% / 100% 100% 60% 60% ;
+      transform: translate3d(0,-3px,0) rotateZ(0.01deg);
+    }
 }
 
 
@@ -199,11 +231,13 @@ nav ul ul li a{
 .historia{
     grid-area: hst;
     background-color: aquamarine;
+    display: flex;
 }
 
 .historiabild{
     grid-area: historiabild;
     background-color: aqua;
+    background-image: url(../img/owen-lystrup-boLgiM0qwkg-unsplash.jpg);
 }
 
 .goal{
@@ -216,3 +250,101 @@ nav ul ul li a{
     background-color: aquamarine;
 }
 
+/* AKTIVITETER*/
+
+
+#aktiviteter_body{
+    /*background-color: #151320;*/
+    /* height: 100vh;
+    display: grid;
+    place-items: center center;
+    background-image: url(../img/LED.jfif);
+    font-family: 'Poppins',sans-serif;
+    max-height: 100vh; */
+    
+    background: linear-gradient(-45deg, #ff8a00, aquamarine);
+    background-size: 600% 600%;
+    animation: gradient 15s ease infinite;
+    /* height: 100vh; */
+    
+}
+
+@keyframes gradient{
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+
+.titel1{
+    display: block;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
+    padding: 40px;
+    grid-gap: 40px;
+}
+
+.card{
+    background-color: #1b1b1b;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.18);
+}
+
+.container{
+    position: relative;
+    clip-path: polygon(0 0,100% 0, 100% 85%, 0 100%);
+}
+
+.container img{
+    width: 50%;
+    display: block;
+    border-radius: 20px 20px 0 0;
+    
+}
+
+/* .card1{
+    background-image: url(../img/VR.avif);
+    background-size: cover;
+} */
+
+
+
+.details{
+    content: center;
+    color: #f2f2f2;
+    
+}
+
+.cards p{
+    padding: 20px;
+}
+
+.cards h3{
+    padding: 20px;
+}
+
+
+
+/*.container:after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position:absolute;
+    top: 0;
+    left: 0;
+    border-radius: 20px 20px 0 0;
+    opacity: 0.7;
+}
+
+.card1>.container:after{
+    background-image: linear-gradient(135deg, #0100ec. #fb36f4);*/
