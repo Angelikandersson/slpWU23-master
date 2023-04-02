@@ -4,5 +4,5 @@ let bev = document.querySelector("#hej");
 
 function showmenu(){
     console.log("huh!")
-    bev.classList.toggle("hide");
-    }
+    bev.classList.toggle(".hide");
+}

@@ -9,9 +9,14 @@
     font-family: 'Poppins', sans-serif;
 }
 
-body{
-    background: #f2f2f2;
+
+.index_page{
+    background-size: cover;
+    height: 100vh;
+    background: linear-gradient(-45deg, #ff8a00, aquamarine);
+    overflow: hidden;
 }
+
 
 nav{
     background: #1b1b1b;
@@ -100,6 +105,48 @@ nav ul ul li a{
 }
 
 
+.center{
+    position: absolute;
+    padding: 20% 20%;
+    text-align: center;
+}
+
+.center h1{
+    text-align: center ;
+    text-transform: uppercase;
+}
+
+.center a{
+    border: 4px solid;
+    padding: 2% 8%;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 100%;
+    margin-top: 5%;
+    display: inline-block;
+    border-radius: 20px;
+    color: #1b1b1b;
+}
+
+.center a:hover{
+    color: green;
+}
+
+#index_bilder {
+    background: linear-gradient( 90deg, orange, aquamarine);
+    width: 100%;
+    display: flex;
+    align-content: end;
+    justify-content: space-around;
+    padding: 1% 1% 1% 1%;
+
+}
+
+#index_bilder img{
+    height: 20%;
+    width: 20%;
+}
+
 @media only screen and (max-width: 768px) {
     nav ul{
         float: left;
@@ -177,23 +224,66 @@ nav ul ul li a{
 
     }
 
+    
+
     /* AKTIVITETER telefon*/
     .cards{
         justify-content: center;
         height: 100px;
     }
+
+    #aktiviteter_body{
+        /* height: 100vh; Jag vet inte varför min bakgrund tar slut? */
+    }
+
+    /* OM OSS telefon*/
+
+    .omoss_page{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr 1fr 2fr 1fr;
+        grid-template-areas: 
+        'historiabild'
+        'hst'
+        'goalbild'
+        'goal';
+        width: 100%;
+        padding: 1em 1em 1em 1em;
+        row-gap: 1em;
+        column-gap: 1em;
+        background: linear-gradient(-45deg, #ff8a00, aquamarine);
+        overflow: hidden; */
+    }
+
+    .historia{
+        grid-area: goal;
+        background-color: #242323;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        /* padding: 1em 1em 1em 1em; */
+        line-height: 2px;
+    }
+
+    .omoss-titel{
+        margin-bottom: 1em;
+        font-size: medium;
+    }
+
+    .omoss-text{
+        font-size: small;
+        line-height: smaller;
+
+    }
+
 }
+
 
 /* INDEX SIDA */
-
-.index_page{
-    /*background: url(../img/hall.avif);
-    background-size: cover;
-    height: 91.3vh;*/
-    height: 100vh;
-    background: linear-gradient(90deg,aquamarine,#ff8a00);
-    height: 100vh;
-}
 
 @keyframes sliderShape{
     0%,100%{
@@ -221,51 +311,75 @@ nav ul ul li a{
     display: grid;
     height: 100vh;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 15% 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas: 
-    'nav nav'
     'hst historiabild'
+    'goalbild historiabild'
     'goalbild goal ' ;
+    padding: 1em 1em 1em 1em;
+    row-gap: 1em;
+    column-gap: 1em;
+    background: linear-gradient(-45deg, #ff8a00, aquamarine);
+    overflow: hidden;
 }
 
+.omoss-text{
+    color: #f2f2f2;
+}
+
+.omoss-titel{
+    color: aquamarine;
+}
 .historia{
     grid-area: hst;
-    background-color: aquamarine;
+    background-color: #242323;
     display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-left: 5em;
+    padding-right: 5em;
+    line-height: 3em;
 }
 
 .historiabild{
     grid-area: historiabild;
-    background-color: aqua;
-    background-image: url(../img/owen-lystrup-boLgiM0qwkg-unsplash.jpg);
+}
+
+.historiabild img{
+    height: 100%;
+    width: 100%;
 }
 
 .goal{
     grid-area: goal;
-    background-color: aquamarine;
+    background-color: #242323;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-left: 5em;
+    padding-right: 5em;
+    line-height: 3em;
 }
 
 .goalbild{
     grid-area: goalbild;
-    background-color: aquamarine;
+}
+
+.goalbild img{
+    height: 100%;
+    width: 100%;
 }
 
 /* AKTIVITETER*/
 
 
 #aktiviteter_body{
-    /*background-color: #151320;*/
-    /* height: 100vh;
-    display: grid;
-    place-items: center center;
     background-image: url(../img/LED.jfif);
     font-family: 'Poppins',sans-serif;
-    max-height: 100vh; */
-    
     background: linear-gradient(-45deg, #ff8a00, aquamarine);
-    background-size: 600% 600%;
+    /* background-size: 600% 600%; */
     animation: gradient 15s ease infinite;
-    /* height: 100vh; */
+    height: 100vh;
     
 }
 
@@ -282,40 +396,33 @@ nav ul ul li a{
 }
 
 
-
-.titel1{
-    display: block;
-}
-
 .cards{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
-    padding: 40px;
-    grid-gap: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(400px,1fr)); 
+    padding: 2.4em;
+    grid-gap: 2.4em;
+    padding-left: 9em;
 }
 
 .card{
     background-color: #1b1b1b;
     border-radius: 20px;
     box-shadow: 0 0 30px rgba(0,0,0,0.18);
+    width: 80%;
 }
 
 .container{
     position: relative;
     clip-path: polygon(0 0,100% 0, 100% 85%, 0 100%);
+    width: 100%;
 }
 
 .container img{
-    width: 50%;
+    width: 100%;
     display: block;
     border-radius: 20px 20px 0 0;
     
 }
-
-/* .card1{
-    background-image: url(../img/VR.avif);
-    background-size: cover;
-} */
 
 
 
@@ -333,18 +440,3 @@ nav ul ul li a{
     padding: 20px;
 }
 
-
-
-/*.container:after{
-    content: "";
-    height: 100%;
-    width: 100%;
-    position:absolute;
-    top: 0;
-    left: 0;
-    border-radius: 20px 20px 0 0;
-    opacity: 0.7;
-}
-
-.card1>.container:after{
-    background-image: linear-gradient(135deg, #0100ec. #fb36f4);*/
