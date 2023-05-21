@@ -12,7 +12,7 @@
 
 .index_page{
     background-size: cover;
-    height: 100vh;
+    height: 115vh;
     background: linear-gradient(-45deg, #ff8a00, aquamarine);
     overflow: hidden;
 }
@@ -147,83 +147,6 @@ nav ul ul li a{
     width: 20%;
 }
 
-@media only screen and (max-width: 768px) {
-    nav ul{
-        float: left;
-        margin-right: 0;
-    }
-    nav.logo{
-        width: 100%;
-
-    }
-
-    nav ul li, nav ul ul li{
-        display: block;
-        width: 100%;
-    }
-
-    nav ul ul{
-        top: 70px;
-        position: static;
-        border-top: none;
-        float: none;
-        display: none;
-        opacity: 1;
-        visibility: visible;
-    }
-
-    nav ul ul li{
-        border-bottom: 0px;
-    }
-
-    nav ul ul a{
-        padding-left: 30px;
-    }
-
-    .show{
-        display: block;
-        color: white;
-        font-size: 18px;
-        padding-left: 0px;
-        line-height: 70px;
-        cursor: pointer;
-    }
-
-    .show:hover{
-        color: aquamarine;
-    }
-
-    .hide{
-        display: none;
-    }
-    
-    .icon {
-        display: block;
-        color: white;
-        position: absolute;
-        padding: 10px, 10px, 10px, 10px;
-        right: 40px;
-        line-height: 70px;
-        font-size: 25px;
-        cursor: pointer;
-        width: 50px;
-        height: 50px;
-        float: right;
-    }
-    
-
-    .hej{
-        display: none;
-    }
-    nav ul li a:hover{
-        box-shadow: none;
-    }
-
-    [id^=btn]:checked + ul {
-        display: block;
-
-    }
-
     
 
     /* AKTIVITETER telefon*/
@@ -233,7 +156,8 @@ nav ul ul li a{
     }
 
     #aktiviteter_body{
-        /* height: 100vh; Jag vet inte varför min bakgrund tar slut? */
+        height: 100vh;
+        background: linear-gradient(-45deg, #ff8a00, aquamarine);
     }
 
     /* OM OSS telefon*/
@@ -243,20 +167,6 @@ nav ul ul li a{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        /* display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 2fr 1fr 2fr 1fr;
-        grid-template-areas: 
-        'historiabild'
-        'hst'
-        'goalbild'
-        'goal';
-        width: 100%;
-        padding: 1em 1em 1em 1em;
-        row-gap: 1em;
-        column-gap: 1em;
-        background: linear-gradient(-45deg, #ff8a00, aquamarine);
-        overflow: hidden; */
     }
 
     .historia{
@@ -265,7 +175,6 @@ nav ul ul li a{
         display: flex;
         align-items: center;
         flex-wrap: wrap;
-        /* padding: 1em 1em 1em 1em; */
         line-height: 2px;
     }
 
@@ -280,28 +189,6 @@ nav ul ul li a{
 
     }
 
-}
-
-
-/* INDEX SIDA */
-
-@keyframes sliderShape{
-    0%,100%{
-    border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
-      transform: translate3d(0,0,0) rotateZ(0.01deg);
-    }
-    34%{
-        border-radius: 70% 30% 46% 54% / 30% 29% 71% 70%;
-      transform:  translate3d(0,5px,0) rotateZ(0.01deg);
-    }
-    50%{
-      transform: translate3d(0,0,0) rotateZ(0.01deg);
-    }
-    67%{
-      border-radius: 100% 60% 60% 100% / 100% 100% 60% 60% ;
-      transform: translate3d(0,-3px,0) rotateZ(0.01deg);
-    }
-}
 
 
 
@@ -440,3 +327,84 @@ nav ul ul li a{
     padding: 20px;
 }
 
+@media only screen and (max-width: 768px) {
+    nav ul{
+        float: left;
+        margin-right: 0;
+    }
+    nav.logo{
+        width: 100%;
+
+    }
+
+    nav ul li, nav ul ul li{
+        display: block;
+        width: 100%;
+    }
+
+    nav ul ul{
+        top: 70px;
+        position: static;
+        border-top: none;
+        float: none;
+        display: none;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    nav ul ul li{
+        border-bottom: 0px;
+    }
+
+    nav ul ul a{
+        padding-left: 30px;
+    }
+
+    .show{
+        display: block;
+        color: white;
+        font-size: 18px;
+        padding-left: 0px;
+        line-height: 70px;
+        cursor: pointer;
+    }
+
+    .show:hover{
+        color: aquamarine;
+    }
+
+    .hide{
+        display: none;
+    }
+    
+    .icon {
+        display: block;
+        color: white;
+        position: absolute;
+        padding: 10px, 10px, 10px, 10px;
+        right: 40px;
+        line-height: 70px;
+        font-size: 25px;
+        cursor: pointer;
+        width: 50px;
+        height: 50px;
+        float: right;
+    }
+    
+
+    .hej{
+        display: none;
+    }
+    nav ul li a:hover{
+        box-shadow: none;
+    }
+
+    [id^=btn]:checked + ul {
+        display: block;
+
+    }
+
+    #aktiviteter_body{
+        height: 275vh;
+    }
+}
