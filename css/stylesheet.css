@@ -158,7 +158,7 @@ nav ul ul li a{
     }
 
     #aktiviteter_body{
-        height: 100vh;
+        height: auto;
         background: linear-gradient(-45deg, #ff8a00, aquamarine);
     }
 
@@ -343,11 +343,11 @@ nav ul ul li a{
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     gap: 2rem; 
+}
+
+.hero{
     padding: 0 10%;
 }
-/* section{
-    padding: 0 10%;
-} */
 
 .hero-text h5{
     font-size: 14px;
@@ -357,7 +357,7 @@ nav ul ul li a{
 
 .hero-text h1{
    font-family: 'Permanent Marker', cursive; 
-   font-size: 90px;
+   font-size: 600%;
    line-height: 1;
    margin: 0 0 45px;
 }
@@ -395,7 +395,7 @@ nav ul ul li a{
     width: 700px;
     height: auto;
 }
-@media only screen and (max-width: 768px) {
+@media (max-width: 800px) {
     nav ul{
         float: left;
         margin-right: 0;
@@ -473,9 +473,116 @@ nav ul ul li a{
     }
 
     #aktiviteter_body{
-        height: 275vh;
+        height: 300vh;
     }
 
     /* KONTAKT */
+    header{
+        padding: 15px 3%;
+        transition: .2s;
+    }
+    section{
+        padding: 0 5%;
+        transition: .2s;
+    }
+
+    .hero-text{
+        padding-top: 10%;
+    }
+
+    .hero{
+        height: 100%;
+        gap: 1rem;
+        grid-template-columns: 1fr;
+    }
+
+    .hero-text h1{
+        font-size: 300%;
+        margin: 0 0 30px;
+    }
+
+    .hero-text h5{
+        margin-bottom: 25px;
+        width: 50%;
+    }
+
+    /* .hero-text p{
+        font-size: 90%;
+    } */
+    .hero-img img{
+        width: 100%;
+        align-items: center;
+    }
+
+    /* OMOSS */
+    .omoss_page{
+        display: grid;
+        height: 200vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        'hst'
+        'historiabild'
+        'goal'
+        'goalbild ' ;
+        padding: 1em 1em 1em 1em;
+        row-gap: 1em;
+        column-gap: 1em;
+        background: linear-gradient(-45deg, #ff8a00, aquamarine);
+        overflow: hidden;
+    }
+
+    .omoss-text{
+        color: #f2f2f2;
+        font-size: 15px;
+        line-height: 2.8em;
+        padding-bottom: 20px;
+    }
     
+    .omoss-titel{
+        color: aquamarine;
+        font-size: 20px;
+        padding-top: 1em;
+    }
+    .historia{
+        grid-area: hst;
+        background-color: #242323;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        padding-left: 5em;
+        padding-right: 5em;
+        width: 90%;
+        justify-self: center;
+    }
+    
+    .historiabild{
+        grid-area: historiabild;
+        height: fit-content;
+    }
+    
+    /* .historiabild img{
+    } */
+    
+    .goal{
+        grid-area: goal;
+        background-color: #242323;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        padding-left: 5em;
+        padding-right: 5em;
+        width: 90%;
+        justify-self: center;
+    }
+    
+    .goalbild{
+        grid-area: goalbild;
+        height: fit-content;
+    }
+    
+    .goalbild img{
+        height: 100%;
+        width: 100%;
+    }
 }
