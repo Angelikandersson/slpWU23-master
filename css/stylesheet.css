@@ -14,7 +14,7 @@
 
 .index_page{
     background-size: cover;
-    height: 115vh;
+    height: 120vh;
     background: linear-gradient(-45deg, #ff8a00, aquamarine);
     overflow: hidden;
 }
@@ -558,7 +558,7 @@ nav ul ul li a{
     
     .historiabild{
         grid-area: historiabild;
-        height: fit-content;
+        height: 100%;
     }
     
     /* .historiabild img{
@@ -578,11 +578,59 @@ nav ul ul li a{
     
     .goalbild{
         grid-area: goalbild;
-        height: fit-content;
+        height: 100%;
+    }
+
+    /* INDEX  */
+
+    .index_page{
+        background-size: cover;
+        height: 100vh;
+        background: linear-gradient(-45deg, #ff8a00, aquamarine);
+        overflow: hidden;
+    }
+
+    .center{
+        position: absolute;
+        padding: 10%;
+        text-align: center;
     }
     
-    .goalbild img{
-        height: 100%;
-        width: 100%;
+    .center h1{
+        text-align: center ;
+        text-transform: uppercase;
     }
+
+    .teambuilding{
+        font-family: 'Permanent Marker', cursive; 
+    }
+    
+    .center h2 {
+        font-size: medium;
+        width: auto;
+    }
+    
+    .center a{
+        border: 4px solid;
+        padding: 2% 8%;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 100%;
+        margin-top: 5%;
+        display: inline-block;
+        border-radius: 20px;
+        color: #1b1b1b;
+    }
+    
+    .center a:hover{
+        color: green;
+    }
+    
+    #index_bilder {
+        visibility: hidden;
+    }
+    
+
+    
+       
 }
