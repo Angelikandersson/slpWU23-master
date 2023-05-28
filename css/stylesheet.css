@@ -11,10 +11,9 @@
     text-decoration: none;
 }
 
-
 .index_page{
     background-size: cover;
-    height: 120vh;
+    height: 100vh;
     background: linear-gradient(-45deg, #ff8a00, aquamarine);
     overflow: hidden;
 }
@@ -517,7 +516,7 @@ nav ul ul li a{
     /* OMOSS */
     .omoss_page{
         display: grid;
-        height: 200vh;
+        height: 220vh;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr;
         grid-template-areas: 
