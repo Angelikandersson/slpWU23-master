@@ -12,12 +12,9 @@
 }
 
 .index_page{
-    background-size: cover;
-    height: 100vh;
+    height: 119vh;
     background: linear-gradient(-45deg, #ff8a00, aquamarine);
-    overflow: hidden;
 }
-
 
 nav{
     background: #1b1b1b;
@@ -148,47 +145,46 @@ nav ul ul li a{
     width: 20%;
 }
 
-    
+.mobilbildindex{
+    visibility: hidden;
+}
 
     /* AKTIVITETER telefon*/
-    .cards{
-        justify-content: center;
-        height: 100px;
-    }
+.cards{
+    justify-content: center;
+    height: 100px;
+}
 
-    #aktiviteter_body{
-        height: auto;
-        background: linear-gradient(-45deg, #ff8a00, aquamarine);
-    }
+#aktiviteter_body{
+    height: auto;
+    background: linear-gradient(-45deg, #ff8a00, aquamarine);
+}
 
-    /* OM OSS telefon*/
+/* OM OSS telefon*/
+.omoge{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
-    .omoss_page{
+.historia{
+    grid-area: goal;
+    background-color: #242323;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    line-height: 2px;
+}
 
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
+.omoss-titel{
+    margin-bottom: 1em;
+    font-size: medium;
+}
 
-    .historia{
-        grid-area: goal;
-        background-color: #242323;
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap;
-        line-height: 2px;
-    }
-
-    .omoss-titel{
-        margin-bottom: 1em;
-        font-size: medium;
-    }
-
-    .omoss-text{
-        font-size: small;
-        line-height: smaller;
-
-    }
+.omoss-text{
+    font-size: small;
+    line-height: smaller;
+}
 
 
 
@@ -584,7 +580,7 @@ nav ul ul li a{
 
     .index_page{
         background-size: cover;
-        height: 100vh;
+        height: 120vh;
         background: linear-gradient(-45deg, #ff8a00, aquamarine);
         overflow: hidden;
     }
@@ -628,8 +624,12 @@ nav ul ul li a{
     #index_bilder {
         visibility: hidden;
     }
-    
-
-    
        
+    .mobilbildindex{
+        visibility: visible;
+        height: 50vh;
+        margin: 80% 25%;
+        display: flex;
+        align-self: flex-end;
+    }
 }
