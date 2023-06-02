@@ -254,7 +254,6 @@ nav ul ul li a{
 
 
 #aktiviteter_body{
-    background-image: url(../img/LED.jfif);
     font-family: 'Poppins',sans-serif;
     background: linear-gradient(-45deg, #ff8a00, #7fffd4);
     background-size: 600% 600%;
@@ -302,8 +301,6 @@ nav ul ul li a{
     border-radius: 20px 20px 0 0;
     
 }
-
-
 
 .details{
     color: #f2f2f2;
@@ -493,9 +490,6 @@ nav ul ul li a{
         width: 50%;
     }
 
-    /* .hero-text p{
-        font-size: 90%;
-    } */
     .hero-img img{
         width: 100%;
         align-items: center;
